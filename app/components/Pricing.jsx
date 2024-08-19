@@ -45,7 +45,7 @@ const PricingPlans = () => {
               <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
                   Free
               </h2>
-              <p className="mt-4 text-zinc-300">Access to basic flashcard features and limited storage.</p>
+              <p className="mt-4 text-zinc-300">Generate upto 5 flashcards with no save option</p>
               <p className="mt-8">
                   <span className="text-5xl font-extrabold white">
                   $0
@@ -66,7 +66,7 @@ const PricingPlans = () => {
               <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
                 Basic
               </h2>
-              <p className="mt-4 text-zinc-300">Access to basic flashcard features and limited storage.</p>
+              <p className="mt-4 text-zinc-300">Generate unlimited flashcards while saving a maximum of 10</p>
               <p className="mt-8">
                 <span className="text-5xl font-extrabold white">
                   $5
@@ -87,7 +87,7 @@ const PricingPlans = () => {
               <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
                 Pro
               </h2>
-              <p className="mt-4 text-zinc-300">Unlimited Flashcards and storage with priority storage</p>
+              <p className="mt-4 text-zinc-300">Generate unlimited flashcards and save as many as you like!</p>
               <p className="mt-8">
                 <span className="text-5xl font-extrabold white">
                   $10
