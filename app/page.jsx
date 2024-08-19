@@ -1,7 +1,5 @@
 'use client'
 
-// import getStripe from "@/utils/get-stripe";
-
 import { Box, Button, Grid, Card, CardContent, Typography } from "@mui/material";
 import PricingPlans from "./components/Pricing";
 import Link from "next/link";
