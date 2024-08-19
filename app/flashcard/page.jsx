@@ -3,7 +3,7 @@
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 import { db } from "@/firebase";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { Grid, Box, Button, Card, CardActionArea, CardContent, Container, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Paper, TextField, Typography } from "@mui/material";
 import { useSearchParams } from "next/navigation";
@@ -17,6 +17,10 @@ export default function Flashcard() {
 
     const searchParams = useSearchParams();
     const search = searchParams.get('id');
+
+    if (!user) {
+        redirect("/sign-in")
+    }
 
     useEffect(() => {
         async function getFlashcard() {

@@ -3,7 +3,7 @@
 import { useUser } from "@clerk/nextjs";
 import { useEffect, useState } from "react";
 import { db } from "@/firebase";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { collection, doc, getDoc, setDoc } from "firebase/firestore";
 import { Grid, Card, CardActionArea, CardContent, Container, Typography, Box } from "@mui/material";
 import Header from "../components/Header";
@@ -13,6 +13,10 @@ export default function Flashcards() {
     const {isLoaded, isSignedIn, user} = useUser();
     const [flashcards, setFlashcards] = useState([]);
     const router = useRouter();
+
+    if (!user) {
+        redirect("/sign-in")
+    }
 
     useEffect(() => {
         async function getFlashcards() {

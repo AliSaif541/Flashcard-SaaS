@@ -4,7 +4,7 @@ import { db } from "@/firebase";
 import { useUser } from "@clerk/nextjs"
 import { Grid, Box, Button, Card, CardActionArea, CardContent, Container, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Paper, TextField, Typography } from "@mui/material";
 import { collection, doc, getDoc, writeBatch } from "firebase/firestore";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import { useState } from "react"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -17,6 +17,10 @@ export default function Generate() {
     const [name, setName] = useState('');
     const [open, setOpen] = useState(false);
     const router = useRouter();
+
+    if (!user) {
+        redirect("/sign-in")
+    }
 
     const handleSubmit = async () => {
         if (!text.trim()) {
