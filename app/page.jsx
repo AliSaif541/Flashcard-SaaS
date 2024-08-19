@@ -71,9 +71,9 @@ export default function Home() {
               <Card sx={{ backgroundColor: '#18181B', color: '#fff', p: 2, borderRadius: '10px' }}>
                   <CardContent>
                   <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
-                    Easy Text Input
+                   Study Together
                   </h2>
-                  <p className="mt-4 text-zinc-300">Simply input your text and let our software do the rest. Creating Flashcards has never been easier</p>
+                  <p className="mt-4 text-zinc-300">Share your flashcards with friends or classmates. Collaborate on creating study sets and compete in fun quizzes.</p>
                   </CardContent>
               </Card>
           </Grid>
@@ -81,9 +81,9 @@ export default function Home() {
               <Card sx={{ backgroundColor: '#18181B', color: '#fff', p: 2, borderRadius: '10px' }}>
                   <CardContent>
                   <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
-                    Smart Flashcards
+                    Organized Flashcard Library
                   </h2>
-                  <p className="mt-4 text-zinc-300">Our AI intelligently breaks down your text into concise flashcards, perfect for studying.</p>
+                  <p className="mt-4 text-zinc-300">Never lose track of your hard work. Our app lets you save, organize, and revisit past flashcards. </p>
                   </CardContent>
               </Card>
           </Grid>
@@ -91,9 +91,9 @@ export default function Home() {
               <Card sx={{ backgroundColor: '#18181B', color: '#fff', p: 2, borderRadius: '10px' }}>
                   <CardContent>
                   <h2 className="text-2xl font-semibold leading-6 text-white mb-4">
-                    Accessible Anywhere
+                    Multi-format Flashcard Creation
                   </h2>
-                  <p className="mt-4 text-zinc-300">Access your flashcards from any device, at any time. Study on the go with ease.</p>
+                  <p className="mt-4 text-zinc-300">Convert PDFs and images into flashcards alongside your text content. (Available in the Future!)</p>
                   </CardContent>
               </Card>
           </Grid>

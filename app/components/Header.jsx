@@ -18,7 +18,7 @@ export default function Header() {
                 </Box>
 
                 <SignedOut>
-                    <Button color="inherit">Login</Button>
+                    <Link href="/sign-in"><Button color="inherit">Login</Button></Link>
                 </SignedOut>
                 <SignedIn>
                     <UserButton />
